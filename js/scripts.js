@@ -1,8 +1,8 @@
 $(function() {
 
-    $('.main-carousel').flickity({
+    $(".main-carousel").flickity({
         // options
-        // cellAlign: 'center',
+        cellAlign: "left",
         contain: true,
         prevNextButtons: false,
       });

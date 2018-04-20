@@ -97,10 +97,14 @@
 }
 
 /* --- The Goods --- */
+body {
+    min-width: 400px;
+}
 header {
     width: 100%;
     height: 116px;
     position: fixed;
+    top: 0px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -165,16 +169,7 @@ ul {
 li {
     display: inline-block;
 }
-footer {
-    background-color: #242424;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin-top: 8px;
-    padding: 30px 0;
-}
 .container {
-    max-width: 1240px;
     margin: 0 auto;
 }
 .bold{
@@ -192,15 +187,18 @@ footer {
     color: #e2574c;
     text-transform: uppercase;
     margin: 0 auto;
-    padding: 16px 36px;
-    /* align-self: flex-end; */
+    padding: 16px 35px;
     border-top: 1px solid #d7d7d7;
 }
 .page {
     margin: 0 10px;
     display: inline-block;
 }
+.hero {
+    margin-top: 100px;
+}
 .feature {
+    height: 405px;
     background:  linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), 
     url(../images/banner-girl.png) no-repeat center 60px,
     url(../images/flower-bkgd.jpg);
@@ -211,8 +209,8 @@ footer {
 }
 .grid {
     display: grid;
-    height: 205vw;
-    width: 100vw;
+    height: 200vw;
+    width: 100%;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
     grid-gap: 7px;
 }
@@ -265,6 +263,8 @@ footer {
 .carousel-cell {
     /* background-color: lightgreen; */
     margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 .carousel-cell img {
     padding: 10px;
@@ -296,6 +296,7 @@ footer {
 .subscriber-email {
     margin: 0 auto;
     position: relative;
+    max-width: 450px;
 }
 .subscriber-email input {
     font-family: "raleway";
@@ -306,7 +307,6 @@ footer {
     padding: 14px 20px;
     margin: 0 auto;
     width: 100%;
-    max-width: 450px;
 }
 .subscriber-email button {
     font-family: "raleway";
@@ -319,9 +319,21 @@ footer {
     margin: 2px;
     /* display: inline; */
     position: absolute;
-    /* right: 2%; */
+    right: 1px;
     top: 1px;
-    left: 1px;
+    /* left: 1px; */
+}
+footer {
+    background-color: #242424;
+    color: white;
+
+    margin-top: 8px;
+    padding: 30px 0;
+}
+footer div.container {
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
 }
 .legal {
     font-family: "playfair";
@@ -354,12 +366,16 @@ footer {
 /* --- Tablet or Desktop Response --- */
 
 @media all and (min-width: 600px) {
+
+p {
+    font-size: 16px;
+}
     
 /* --- Grid Response --- */
 
     .grid {
         height: 50vw;
-        width: 100vw;
+        width: 100%;
         grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
     }
     .mens {
@@ -368,17 +384,22 @@ footer {
     .womens {
         grid-area: 2 / 3 / 3 / 5;
     }
-    .info p {
-        text-align: left;
-    }
+/* --- Carousel Response --- */
+
+.carousel-cell {
+    width: 50%;
+}
 
 /* --- Footer Response --- */
 
-    footer {
+    footer div.container {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
+    }
+    .info p {
+        text-align: left;
     }
     .social {
         margin: 0;
@@ -389,5 +410,12 @@ footer {
     }
     .social-words {
         display: inline;
+    }
+}
+
+@media all and (min-width: 1240px) {
+    
+    .carousel-cell {
+        width: 25%;
     }
 }
