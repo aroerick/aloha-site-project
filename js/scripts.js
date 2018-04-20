@@ -1,1 +1,10 @@
-console.log("poop");
+$(function() {
+
+    $('.main-carousel').flickity({
+        // options
+        // cellAlign: 'center',
+        contain: true,
+        prevNextButtons: false,
+      });
+
+});
