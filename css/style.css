@@ -113,6 +113,9 @@ header {
     z-index: 1;
     box-shadow: 0 1px 4px lightgray;
 }
+a {
+    text-decoration: none;
+}
 nav {
     font-family: "Raleway";
     font-weight: 500;
@@ -189,7 +192,6 @@ li {
     margin: 10px 10px 10px auto;
 }
 .menu {
-    color: #e2574c;
     text-transform: uppercase;
     margin: 0 auto;
     padding: 14px 35px;
@@ -198,6 +200,12 @@ li {
 .page {
     margin: 0 10px;
     display: inline-block;
+}
+.page a {
+    color: #e2574c;
+}
+.page a:hover {
+    color: #b64036;
 }
 .hero {
     margin-top: 100px;
@@ -237,6 +245,9 @@ li {
     text-shadow: 2px 2px 2px dimgray;
     text-transform: uppercase;
     text-align: center;
+}
+.grid-text:hover {
+    color: rgb(250, 243, 208);
 }
 .mens {
     background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url(../images/mens-category.jpg);
@@ -321,6 +332,10 @@ li {
     margin: 0 auto;
     width: 100%;
 }
+.subscriber-email input:focus {
+    outline: none;
+    box-shadow: 0px 0px 4px #2d2d2d;
+}
 .subscriber-email button {
     font-family: "raleway";
     font-weight: 500;
@@ -333,6 +348,10 @@ li {
     position: absolute;
     right: 11px;
     top: 29px;
+    outline: none;
+}
+.subscriber-email button:hover {
+    background-color: #b64036;
 }
 footer {
     background-color: #242424;
@@ -360,6 +379,13 @@ footer div.container {
     color: #969696;
     padding-top: 20px;
 }
+.legal a {
+    color: white;
+    text-decoration: underline;
+}
+.legal a:hover {
+    color: #e2574c
+}
 .social {
     font-family: "raleway";
     font-weight: 300;
@@ -369,6 +395,12 @@ footer div.container {
 .fab {
     display: inline-block;
     width: 25px;
+}
+.social li a {
+    color: white;
+}
+.social li a:hover {
+    color: #e2574c;
 }
 .social-words {
     display: none;
