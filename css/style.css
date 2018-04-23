@@ -105,13 +105,17 @@ header {
     height: 117px;
     position: fixed;
     top: 0px;
+    background: white;
+    box-shadow: 0 1px 4px lightgray;
+    z-index: 10;
+}
+header div {
+    min-width: 400px;
+    max-width: 1240px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: space-between;
-    background: white;
-    z-index: 1;
-    box-shadow: 0 1px 4px lightgray;
 }
 a {
     text-decoration: none;
@@ -333,7 +337,7 @@ li {
     max-width: 450px;
     padding: 28px 10px;
 }
-.subscriber-email input {
+.subscriber-email .email-input {
     font-family: "raleway";
     font-weight: 300;
     display: block;
@@ -343,11 +347,11 @@ li {
     margin: 0 auto;
     width: 100%;
 }
-.subscriber-email input:focus {
+.subscriber-email .email-input:focus {
     outline: none;
     box-shadow: 0px 0px 4px #2d2d2d;
 }
-.subscriber-email button {
+.subscriber-email .button {
     font-family: "raleway";
     font-weight: 500;
     border: none;
@@ -361,7 +365,7 @@ li {
     top: 29px;
     outline: none;
 }
-.subscriber-email button:hover {
+.subscriber-email .button:hover {
     background-color: #b64036;
 }
 footer {
@@ -485,10 +489,10 @@ footer div.container {
     .subscribe {
         height: 380px;
     }
-    .subscriber-email input {
+    .subscriber-email .email-input {
         font-size: 16px;
     }
-    .subscriber-email button {
+    .subscriber-email .button {
         font-size: 16px;
     }
 /* --- Footer Response --- */

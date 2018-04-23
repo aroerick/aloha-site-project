@@ -15,16 +15,18 @@
     </head>
     <body>
         <header>
-            <img class="logo" src="images/aloha-logo.svg" alt="Aloha Logo" height=50px />
-            <img class="cart-icon" src="images/cart-icon.svg" alt="You Cart" height=50px />
-            <nav>
-                <ul class="menu">
-                    <li class="page"><a href="#about">About</a></li>
-                    <li class="page"><a href="#shop">Shop</a></li>
-                    <li class="page"><a href="#featured">Featured</a></li>
-                    <li class="page"><a href="#updates">Updates</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <img class="logo" src="images/aloha-logo.svg" alt="Aloha Logo" height=50px />
+                <img class="cart-icon" src="images/cart-icon.svg" alt="You Cart" height=50px />
+                <nav>
+                    <ul class="menu">
+                        <li class="page"><a href="#about">About</a></li>
+                        <li class="page"><a href="#shop">Shop</a></li>
+                        <li class="page"><a href="#featured">Featured</a></li>
+                        <li class="page"><a href="#updates">Updates</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header> 
         <section class="feature">
             <div class="container hero">  
@@ -104,10 +106,10 @@
                 <h2>Sign-up for <span class="bold">Updates</span></h2>
                 <p class="body-text">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
             </div>
-            <div class="subscriber-email">
-                <input type="email" name="email-input" placeholder="Your Email" >
-                <button type="submit">Subscribe</button>
-            </div>    
+            <form method="post" action="" class="subscriber-email">
+                <input type="text" id="email-text" class="email-input" name="email-input" placeholder="Your Email" >
+                <input type="submit" id="email-sub" class="button" value="Subscribe">
+            </form>    
         </section>
         <footer>
             <div class="container">
