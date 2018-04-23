@@ -120,6 +120,7 @@ nav {
     font-family: "Raleway";
     font-weight: 500;
     font-size: 14px;
+    order: 3;
 }
 h1{
     font-family: "playfair", serif;
@@ -186,10 +187,12 @@ li {
     font-style: normal;
 }
 .logo {
-    margin: 10px auto 10px 10px;
+    margin: 15px auto 10px 10px;
+    order: 1;
 }
 .cart-icon{
-    margin: 10px 10px 10px auto;
+    margin: 15px 10px 10px auto;
+    order: 2;
 }
 .menu {
     text-transform: uppercase;
@@ -220,6 +223,9 @@ li {
 .blurb{
     margin: 45px 10px;
     height: 177px;
+}
+.blurb .container {
+    max-width: 720px;
 }
 .blurb p {
     font-size: 16px;
@@ -276,7 +282,7 @@ li {
     grid-area: 4 / 1 / 5 / 3;
 }
 .carousel {
-    height: 650px;
+    height: 730px;
 }
 .carousel h2 {
     padding: 65px 0;
@@ -309,12 +315,15 @@ li {
 }
 .subscribe {
     background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(../images/wave-bkgd.jpg);
-    background-size: 360%;
+    background-size: auto 880px;
     background-repeat: no-repeat;
     background-position: bottom;
     height: 331px;
     color: white;
     padding: 15px;
+}
+.subscribe .container {
+    max-width: 720px;
 }
 .subscriber-email {
     margin: 0 auto;
@@ -356,7 +365,6 @@ li {
 footer {
     background-color: #242424;
     color: white;
-
     margin-top: 8px;
     padding: 30px 0;
 }
@@ -410,10 +418,48 @@ footer div.container {
 
 @media all and (min-width: 600px) {
 
-p {
-    font-size: 16px;
-}
+    p {
+        font-size: 16px;
+    }
+    p.body-text {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 38px;
+        padding-top: 18px;
+    }
+/* --- Header Response --- */
+
+    header {
+        height: 84px;
+        flex-flow: row nowrap;
+    }
+    .cart-icon {
+        order: 3;
+        padding-left: 70px;
+    }
+    nav {
+        order: 2;
+    }
+    .menu {
+        text-align: center;
+        padding: 39px 0 14px 0;
+        border-top: none;
+    }
+/* --- Feature Response --- */
     
+    h1 {
+        font-size: 48px;
+        /* padding-top: 30px; */
+    }
+    h3 {
+        font-size: 20px;
+        padding-top: 160px;
+    }
+    .hero {
+        margin-top: 79px;
+    }
+
 /* --- Grid Response --- */
 
     .grid {
@@ -427,14 +473,28 @@ p {
     .womens {
         grid-area: 2 / 3 / 3 / 5;
     }
+
 /* --- Carousel Response --- */
 
-.carousel-cell {
-    width: 50%;
-}
+    .carousel-cell {
+        width: 50%;
+    }
+/* --- Subscribe Response */
 
+    .subscribe {
+        height: 380px;
+    }
+    .subscriber-email input {
+        font-size: 16px;
+    }
+    .subscriber-email button {
+        font-size: 16px;
+    }
 /* --- Footer Response --- */
 
+    footer {
+        height: 287px;
+    }
     footer div.container {
         flex-direction: row;
         justify-content: space-between;
