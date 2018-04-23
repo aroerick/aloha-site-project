@@ -7,6 +7,7 @@ $(function() {
         cellAlign: "left",
         contain: true,
         prevNextButtons: false,
+        autoPlay: 3500
       });
 
 // Internal Nav/Smooth Scrolling
