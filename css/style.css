@@ -342,26 +342,27 @@ footer div.container {
     display: flex;
     flex-direction: column;
 }
-.legal {
+footer p {
     font-family: "playfair";
-    font-weight: normal;
     line-height: 1.5;
+}
+.legal {
     color: white;
-    margin-top: 29px;
 }
 .contact {
-    font-family: "playfair";
-    font-weight: normal;
-    line-height: 1.5;
-    color: #969696;
-    padding-top: 20px;
+    color: white;
+    /* padding: 10px 0; */
+    margin: 20px 0;
 }
-.legal a {
+.contact a {
     color: white;
     text-decoration: underline;
 }
-.legal a:hover {
+.contact a:hover {
     color: #e2574c
+}
+.address {
+    color: #969696;
 }
 .social {
     font-family: "raleway";
