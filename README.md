@@ -6,7 +6,7 @@ A simple home page for the Aloha Apparel website.
 
 The bulk of this site is in the HTML structuring and harnessing that in the CSS, then sprinkling in a little bit of javascript for extra flavor. 
 
-Semantic HTML is at the forefront here, using tags like <section>, <nav> etc. rather than just <div>ing the crap out of everything.
+Semantic HTML is at the forefront here, using tags like section, nav etc. rather than just div>ing the crap out of everything.
 
 CSS was implemented in a mobile first approach, with responsive elements changing at multiple break points for tablet and desktop.
 
